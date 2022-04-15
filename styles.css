@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 body{
-    background-image: url('img/bg2.gif');
+    background-image: url('img/bg.gif');
     background-size:cover;
     color: white;
     font-family: 'Press Start 2P', cursive;
@@ -23,15 +23,17 @@ a, a:hover{
 
 .left li {
     padding: 2vh;
-    font-size:15px;
 }
 
 .left ul{
     list-style: none;
+    font-size:15px;
 
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
 
     padding: 0px;
     margin: 0px;
@@ -43,23 +45,31 @@ a, a:hover{
     font-size: 30px;
 }
 
+/* medium width */
+@media only screen and (max-width: 1700px){
+    .nav-heading {
+        margin: 2vh;
+        font-size: 20px;
+    }
+
+    .left ul{
+        font-size: 10px;
+    }
+}
+
+/* phone width */
 @media only screen and (max-width: 768px){
     .left{
         max-height: 15vh; 
     }
 
-    /* .left li {
-        display: inline;
-        font-size: smaller;
-    } */
-
     .left ul{
         flex-direction: row;
-        font-size: smaller;
+        font-size: 8px;
     }
 
     .nav-heading {
         margin: 1vh;
-        font-size: 20px;
+        font-size: 15x;
     }
 }
