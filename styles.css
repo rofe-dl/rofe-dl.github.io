@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
 
 body{
     background-image: url('img/bg0.gif');
     background-size:cover;
     color: white;
-    font-family: 'Press Start 2P', cursive;
+    /* font-family: 'Press Start 2P', cursive; */
+    font-family: 'Inter', sans-serif;
 }
 
 a, a:hover{
@@ -27,7 +29,7 @@ a, a:hover{
 
 .left ul{
     list-style: none;
-    font-size:15px;
+    font-size:25px;
 
     display: flex;
     flex-direction: column;
@@ -42,18 +44,18 @@ a, a:hover{
 .nav-heading {
     text-align: center;
     margin: 4vh;
-    font-size: 30px;
+    font-size: 40px;
 }
 
 /* medium width */
 @media only screen and (max-width: 1700px){
     .nav-heading {
         margin: 2vh;
-        font-size: 20px;
+        font-size: 30px;
     }
 
     .left ul{
-        font-size: 10px;
+        font-size: 15px;
     }
 }
 
@@ -67,11 +69,11 @@ a, a:hover{
 
     .left ul{
         flex-direction: row;
-        font-size: 8px;
+        font-size: 15px;
     }
 
     .nav-heading {
         margin: 1vh;
-        font-size: 15x;
+        font-size: 25x;
     }
 }
