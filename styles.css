@@ -32,7 +32,7 @@ a, a:hover{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
 
     padding: 0px;
@@ -60,7 +60,9 @@ a, a:hover{
 /* phone width */
 @media only screen and (max-width: 768px){
     .left{
-        max-height: 15vh; 
+        height: auto;
+        max-height: 25vh;
+        margin-top: 0px !important; 
     }
 
     .left ul{
