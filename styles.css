@@ -1,19 +1,65 @@
-.nav{
-    background-color:blueviolet;
-    height: 75vh;
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body{
+    background-image: url('img/bg2.gif');
+    background-size:cover;
+    color: white;
+    font-family: 'Press Start 2P', cursive;
 }
 
-.main{
-    background-color: cadetblue;
+a, a:hover{
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.left, .right{
     height: 75vh;
+    background-color: rgba(0, 0, 0, 0.6); /* transparent */
 }
 
 .row{
     height: 100vh;
 }
 
+.left li {
+    padding: 2vh;
+    font-size:15px;
+}
+
+.left ul{
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 0px;
+    margin: 0px;
+}
+
+.nav-heading {
+    text-align: center;
+    margin: 4vh;
+    font-size: 30px;
+}
+
 @media only screen and (max-width: 768px){
-    .nav{
+    .left{
         max-height: 15vh; 
+    }
+
+    /* .left li {
+        display: inline;
+        font-size: smaller;
+    } */
+
+    .left ul{
+        flex-direction: row;
+        font-size: smaller;
+    }
+
+    .nav-heading {
+        margin: 1vh;
+        font-size: 20px;
     }
 }
