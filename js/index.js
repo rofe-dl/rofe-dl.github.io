@@ -1,35 +1,6 @@
-// let images = [
-//     'img/bg1.gif', 
-//     'img/bg2.gif',
-//     'img/bg3.gif',
-//     'img/bg4.gif',
-//     'img/bg5.gif',
-//     'img/bg6.gif'
-// ];
-
-// function slideImage(i){
-//     i = parseInt(i);
-//     document.body.style.backgroundImage = `url(${images[i]})`;
-// }
-
 // const { Controller, Move } = splide.Components;
 
-window.onload = () => {
-    var splide = new Splide('.splide', {
-        'arrows': false,
-        'pagination': false
-    });
-
-    splide.mount();
-
-    buttons = document.getElementsByClassName('slide-button');
-
-    for (var i = 0; i < buttons.length; i++){
-        buttons[i].addEventListener("click", (event) => {
-            splide.go(parseInt(event.target.dataset.slideid));
-        })
-    }
-
+function randomizeBg(){
     let bgArray = [
         'bg0.gif',
         'bg1.gif',
@@ -47,8 +18,35 @@ window.onload = () => {
     let bg = bgArray[Math.floor(Math.random() * bgArray.length)];
     let path = './img/';
 
-    // window.onload = () => {
-        console.log(bg);
-        document.body.style.backgroundImage = `url(${path + bg})`;
-    // }
+    console.log(bg);
+    document.body.style.backgroundImage = `url(${path + bg})`;
+}
+
+window.onload = () => {
+    randomizeBg();
+
+    var splide = new Splide('.splide', {
+        'arrows': false,
+        'pagination': false
+    });
+
+    splide.mount();
+
+    buttons = document.getElementsByClassName('slide-btn');
+
+    buttons[0].classList.add('active');
+    currentActiveButton = buttons[0];
+
+    for (var i = 0; i < buttons.length; i++){
+        buttons[i].addEventListener("click", (event) => {
+            currentActiveButton.classList.remove('active');
+
+            event.currentTarget.classList.add('active');
+            currentActiveButton = event.currentTarget;
+
+            splide.go(parseInt(event.currentTarget.dataset.slideid));
+        })
+    }
+
+    
 }
