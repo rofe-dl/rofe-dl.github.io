@@ -57,7 +57,24 @@ a, a:hover{
 .nav-btn.active{
     background-color: white;
     color: black;
-    border-radius: 15px;
+    border-radius: 10px;
+}
+
+/* NEXT button */
+.content .slide-btn{
+    border-color: white;
+    border-style:solid;
+    padding: 1vh;
+}
+
+/* FIRST SLIDE */
+.first-content{
+    margin-top: 15vh;
+    font-size: 30px;
+}
+
+.first-content h1{
+    font-size: 128px;
 }
 
 /* MEDIUM SCREEN */
@@ -69,6 +86,15 @@ a, a:hover{
 
     .left ul{
         font-size: 20px;
+    }
+
+    /* FIRST SLIDE */
+    .first-content{
+        font-size: 15px;
+    }
+    
+    .first-content h1{
+        font-size: 70px;
     }
 }
 
@@ -91,11 +117,13 @@ a, a:hover{
     }
 
     .right{
-        height: 75vh;
+        height: auto;
+        min-height: 100vh;
+        margin-top: 10vh !important;
     }
 
     .content {
         padding: 2vh;
         padding-top: 4vh;
-    }
+    }  
 }
