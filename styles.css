@@ -15,7 +15,7 @@ a, a:hover{
 }
 
 .left, .right{
-    height: 75vh;
+    height: 85vh;
     background-color: rgba(0, 0, 0, 0.6); /* transparent */
 }
 
@@ -75,5 +75,9 @@ a, a:hover{
     .nav-heading {
         margin: 1vh;
         font-size: 25x;
+    }
+
+    .right{
+        height: 75vh;
     }
 }
