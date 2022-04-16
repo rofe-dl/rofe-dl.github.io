@@ -18,7 +18,6 @@ function randomizeBg(){
     let bg = bgArray[Math.floor(Math.random() * bgArray.length)];
     let path = './img/';
 
-    console.log(bg);
     document.body.style.backgroundImage = `url(${path + bg})`;
 }
 
@@ -32,19 +31,23 @@ window.onload = () => {
 
     splide.mount();
 
-    buttons = document.getElementsByClassName('slide-btn');
+    slideButtons = document.getElementsByClassName('slide-btn');
+    navButtons = document.getElementsByClassName('nav-btn')
 
-    buttons[0].classList.add('active');
-    currentActiveButton = buttons[0];
+    navButtons[0].classList.add('active');
+    currentActiveButton = navButtons[0];
 
-    for (var i = 0; i < buttons.length; i++){
-        buttons[i].addEventListener("click", (event) => {
-            currentActiveButton.classList.remove('active');
+    for (var i = 0; i < slideButtons.length; i++){
+        slideButtons[i].addEventListener("click", (event) => {
+            let element = event.currentTarget;
+            console.log('hello')
+            if (element.classList.contains('nav-btn')){
+                currentActiveButton.classList.remove('active');
+                event.currentTarget.classList.add('active');
+                currentActiveButton = element;
+            }
 
-            event.currentTarget.classList.add('active');
-            currentActiveButton = event.currentTarget;
-
-            splide.go(parseInt(event.currentTarget.dataset.slideid));
+            splide.go(parseInt(element.dataset.slideid));
         })
     }
 
