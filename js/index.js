@@ -26,7 +26,8 @@ window.onload = () => {
 
     var splide = new Splide('.splide', {
         'arrows': false,
-        'pagination': false
+        'pagination': false,
+        'drag': false
     });
 
     splide.mount();

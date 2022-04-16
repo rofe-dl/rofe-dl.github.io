@@ -8,13 +8,17 @@ body{
     font-family: 'Inter', sans-serif;
 }
 
-.row{
+body > .container-fluid > .row{
     height: 100vh;
 }
 
 a, a:hover{
     color: inherit;
     text-decoration: inherit;
+}
+
+.right {
+    overflow-y:scroll;
 }
 
 /* ************ */
@@ -40,6 +44,7 @@ a, a:hover{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    /* for wrapping starting from middle*/
     justify-content: center;
 
     text-align: center;
@@ -49,22 +54,29 @@ a, a:hover{
 
 .nav-heading {
     text-align: center;
-    font-family: 'Press Start 2P', cursive;
+    /* font-family: 'Press Start 2P', cursive; */
     margin: 4vh;
-    font-size: 35px;
+    font-size: 50px;
 }
 
+/* ACTIVE nav buttons */
 .nav-btn.active{
     background-color: white;
     color: black;
     border-radius: 10px;
 }
 
-/* NEXT button */
-.content .slide-btn{
+/* NEXT & Download button */
+.content .butn{
     border-color: white;
     border-style:solid;
     padding: 1vh;
+}
+
+/* Socials Icons */
+ion-icon {
+    font-size: 60px;
+    margin: 1vw;
 }
 
 /* FIRST SLIDE */
@@ -77,11 +89,26 @@ a, a:hover{
     font-size: 128px;
 }
 
+/* SECOND SLIDE */
+.second-content{
+    margin-top: 3vh;
+    font-size: 20px;
+}
+
+.second-content img {
+    width: 100%;
+    margin: 3vh;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* MEDIUM SCREEN */
 @media only screen and (max-width: 1700px){
     .nav-heading {
         margin: 2vh;
-        font-size: 20px;
+        font-size: 30px;
     }
 
     .left ul{
@@ -94,7 +121,13 @@ a, a:hover{
     }
     
     .first-content h1{
-        font-size: 70px;
+        font-size: 100px;
+    }
+
+    /* SECOND SLIDE */
+    .second-content{
+        margin-top: 2vh;
+        font-size: 15px;
     }
 }
 
@@ -113,12 +146,12 @@ a, a:hover{
 
     .nav-heading {
         margin: 1vh;
-        font-size: 25x;
+        font-size: 20x;
     }
 
     .right{
-        height: auto;
         min-height: 100vh;
+        height: auto;
         margin-top: 10vh !important;
     }
 
