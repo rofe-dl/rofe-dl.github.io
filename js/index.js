@@ -31,24 +31,23 @@ window.onload = () => {
 
     splide.mount();
 
+    // NEXT buttons and nav buttons are all slide buttons, but only
+    // buttons on the left are nav buttons
     slideButtons = document.getElementsByClassName('slide-btn');
     navButtons = document.getElementsByClassName('nav-btn')
 
     navButtons[0].classList.add('active');
-    currentActiveButton = navButtons[0];
+    currentActiveButtonIndex = 0;
 
     for (var i = 0; i < slideButtons.length; i++){
-        slideButtons[i].addEventListener("click", (event) => {
-            let element = event.currentTarget;
+        slideButtons[i].addEventListener('click', (event) => {
+            let slideID = parseInt(event.currentTarget.dataset.slideid);
             
-            // if nav button was pressed, otherwise NEXT button was pressed
-            if (element.classList.contains('nav-btn')){
-                currentActiveButton.classList.remove('active');
-                event.currentTarget.classList.add('active');
-                currentActiveButton = element;
-            }
+            navButtons[currentActiveButtonIndex].classList.remove('active');
+            navButtons[slideID].classList.add('active');
+            currentActiveButtonIndex = slideID;
 
-            splide.go(parseInt(element.dataset.slideid));
+            splide.go(slideID);
         })
     }
 
