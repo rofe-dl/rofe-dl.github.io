@@ -40,7 +40,8 @@ window.onload = () => {
     for (var i = 0; i < slideButtons.length; i++){
         slideButtons[i].addEventListener("click", (event) => {
             let element = event.currentTarget;
-            console.log('hello')
+            
+            // if nav button was pressed, otherwise NEXT button was pressed
             if (element.classList.contains('nav-btn')){
                 currentActiveButton.classList.remove('active');
                 event.currentTarget.classList.add('active');

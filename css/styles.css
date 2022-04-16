@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
-
+/* GLOBAL STUFF */
 body{
     background-image: black;
     background-size:cover;
     color: white;
-    /* font-family: 'Press Start 2P', cursive; */
     font-family: 'Inter', sans-serif;
+}
+
+.row{
+    height: 100vh;
 }
 
 a, a:hover{
@@ -14,14 +17,16 @@ a, a:hover{
     text-decoration: inherit;
 }
 
+/* ************ */
+
 .left, .right{
     height: 85vh;
     background-color: rgba(0, 0, 0, 0.7); /* transparent */
     border-radius: 15px;
 }
 
-.row{
-    height: 100vh;
+.content {
+    padding: 5vh;
 }
 
 .left li {
@@ -35,21 +40,18 @@ a, a:hover{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    /* align-items: center; */
     justify-content: center;
 
+    text-align: center;
     padding: 0px;
     margin: 0px;
 }
 
-.content {
-    padding: 5vh;
-}
-
 .nav-heading {
     text-align: center;
+    font-family: 'Press Start 2P', cursive;
     margin: 4vh;
-    font-size: 45px;
+    font-size: 35px;
 }
 
 .nav-btn.active{
@@ -58,11 +60,11 @@ a, a:hover{
     border-radius: 15px;
 }
 
-/* medium width */
+/* MEDIUM SCREEN */
 @media only screen and (max-width: 1700px){
     .nav-heading {
         margin: 2vh;
-        font-size: 30px;
+        font-size: 20px;
     }
 
     .left ul{
@@ -70,7 +72,7 @@ a, a:hover{
     }
 }
 
-/* phone width */
+/* PHONE SCREEN */
 @media only screen and (max-width: 768px){
     .left{
         height: auto;
