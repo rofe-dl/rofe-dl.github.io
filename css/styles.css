@@ -19,6 +19,7 @@ a, a:hover{
 
 .right {
     overflow-y:scroll;
+    border-radius: 15px;
 }
 
 /* ************ */
@@ -26,7 +27,6 @@ a, a:hover{
 .left, .right{
     height: 85vh;
     background-color: rgba(0, 0, 0, 0.7); /* transparent */
-    border-radius: 15px;
 }
 
 .content {
