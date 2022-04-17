@@ -30,7 +30,10 @@ window.onload = () => {
         'drag': false
     });
 
+    var splide_2 = new Splide('.splide-2');
+
     splide.mount();
+    splide_2.mount()
 
     // NEXT buttons and nav buttons are all slide buttons, but only
     // buttons on the left are nav buttons

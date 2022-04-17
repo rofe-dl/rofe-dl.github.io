@@ -63,7 +63,7 @@ a, a:hover{
 
     text-align: center;
     padding: 0px;
-    margin: 0px;
+    margin-top: 10vh;
 }
 
 .nav-heading {
@@ -140,13 +140,14 @@ ion-icon {
 @media only screen and (max-width: 768px){
     .left{
         height: auto;
-        max-height: 25vh;
+        max-height: 45vh;
         margin-top: 0px !important; 
     }
 
     .left ul{
         flex-direction: row;
         font-size: 15px;
+        margin-top: 5vh;
     }
 
     .nav-heading {
