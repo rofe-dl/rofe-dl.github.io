@@ -30,7 +30,9 @@ window.onload = () => {
         'drag': false
     });
 
-    var splide_2 = new Splide('.splide-2');
+    var splide_2 = new Splide('.splide-2', {
+        type : 'loop'
+    });
 
     splide.mount();
     splide_2.mount()
