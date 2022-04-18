@@ -35,6 +35,15 @@ a, a:hover{
     border-radius: 15px;
 }
 
+.zoom {
+    transition: 0.2s ease-in-out;
+    width: 100px;
+}
+
+.zoom:hover {
+    transform-origin:center;
+    transform: scale(1.1);
+}
 /* ************ */
 
 .left, .right{
@@ -82,11 +91,21 @@ a, a:hover{
     font-size: 50px;
 }
 
+.nav-btn > li{
+    transition: .2s ease-in-out;
+}
+
+.nav-btn > li:hover{
+    transform-origin: center;
+    transform: scale(1.2);
+}
+
 /* ACTIVE nav buttons */
 .nav-btn.active{
     background-color: white;
     color: black;
     border-radius: 10px;
+    transition: 0.2s ease-in-out;
 }
 
 /* NEXT & Download button */
@@ -94,12 +113,29 @@ a, a:hover{
     border-color: white;
     border-style:solid;
     padding: 1vh;
+
+    transition: 0.3s ease-in-out;
+}
+
+.content .butn:hover{
+    border-color: black;
+    color: black;
+    background-color: white;
 }
 
 /* Socials Icons */
 ion-icon {
     font-size: 60px;
     margin: 1vw;
+}
+
+.content img {
+    width: 100%;
+    margin: 3vh;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .first-content{
@@ -113,15 +149,6 @@ ion-icon {
 
 .second-content {
     margin-top: 5vh;
-}
-
-.content img {
-    width: 100%;
-    margin: 3vh;
-
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .second-content img {
