@@ -21,8 +21,11 @@ a, a:hover{
     text-decoration: inherit;
 }
 
-.right {
+.right{
     overflow-y:scroll;
+}
+
+.left, .right {
     border-radius: 15px;
 }
 
@@ -141,7 +144,10 @@ ion-icon {
     .left{
         height: auto;
         max-height: 45vh;
-        margin-top: 0px !important; 
+        margin-top: 0px !important;
+        border-radius: 0px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
     }
 
     .left ul{

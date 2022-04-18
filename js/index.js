@@ -21,15 +21,7 @@ function randomizeBg(){
     document.body.style.backgroundImage = `url(${path + bg})`;
 }
 
-window.onload = () => {
-    randomizeBg();
-
-    var splide = new Splide('.splide', {
-        'arrows': false,
-        'pagination': false,
-        'drag': false
-    });
-
+function init_splides(){
     var splide_2 = new Splide('.splide-2', {
         type : 'loop'
     });
@@ -46,11 +38,25 @@ window.onload = () => {
         type : 'loop'
     });
 
-    splide.mount();
-    splide_2.mount()
-    splide_3.mount()
-    splide_4.mount()
-    splide_5.mount()
+    splide_2.mount();
+    splide_3.mount();
+    splide_4.mount();
+    splide_5.mount();
+}
+
+window.onload = () => {
+    randomizeBg();
+
+    var main_splide = new Splide('.splide', {
+        arrows : false,
+        pagination: false,
+        drag: false
+    });
+
+    
+    main_splide.mount();
+
+    init_splides();
 
     // to scroll back to top when changing slides later down
     var right = document.querySelector('.right'); 
@@ -71,7 +77,7 @@ window.onload = () => {
             navButtons[slideID].classList.add('active');
             currentActiveButtonIndex = slideID;
 
-            splide.go(slideID);
+            main_splide.go(slideID);
             right.scrollTop = 0;
         })
     }
