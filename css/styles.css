@@ -21,8 +21,14 @@ a, a:hover{
     text-decoration: inherit;
 }
 
-.right{
+.first-content, .second-content {
+    overflow-y: auto;
+    height: 70vh;
+}
+
+.third-content{
     overflow-y:scroll;
+    height: 65vh;
 }
 
 .left, .right {
@@ -32,7 +38,7 @@ a, a:hover{
 /* ************ */
 
 .left, .right{
-    height: 85vh;
+    height: 90vh;
     background-color: rgba(0, 0, 0, 0.7); /* transparent */
 }
 
@@ -97,12 +103,16 @@ ion-icon {
 }
 
 .first-content{
-    margin-top: 15vh;
+    margin-top: 10vh;
     font-size: 30px;
 }
 
 .first-content h1{
     font-size: 128px;
+}
+
+.second-content {
+    margin-top: 5vh;
 }
 
 .content img {
@@ -114,6 +124,9 @@ ion-icon {
     margin-right: auto;
 }
 
+.second-content img {
+    width: 70%;
+}
 
 /* MEDIUM SCREEN */
 @media only screen and (max-width: 1700px){
