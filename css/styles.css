@@ -107,7 +107,7 @@ ion-icon {
     font-size: 30px;
 }
 
-.first-content h1, .fifth-content h1{
+.first-content h1{
     font-size: 128px;
 }
 
@@ -126,6 +126,12 @@ ion-icon {
 
 .second-content img {
     width: 70%;
+}
+
+.fifth-content li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 /* MEDIUM SCREEN */
