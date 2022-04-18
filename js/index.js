@@ -34,8 +34,16 @@ window.onload = () => {
         type : 'loop'
     });
 
+    var splide_3 = new Splide('.splide-3', {
+        type : 'loop'
+    });
+
     splide.mount();
     splide_2.mount()
+    splide_3.mount()
+
+    // to scroll back to top when changing slides later down
+    var right = document.querySelector('.right'); 
 
     // NEXT buttons and nav buttons are all slide buttons, but only
     // buttons on the left are nav buttons
@@ -53,6 +61,7 @@ window.onload = () => {
             navButtons[slideID].classList.add('active');
             currentActiveButtonIndex = slideID;
 
+            right.scrollTop = 0
             splide.go(slideID);
         })
     }
