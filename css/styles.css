@@ -43,6 +43,7 @@ a, a:hover{
 .zoom:hover {
     transform-origin:center;
     transform: scale(1.1);
+    color: grey;
 }
 /* ************ */
 
