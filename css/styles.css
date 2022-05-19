@@ -27,12 +27,18 @@ a, a:hover{
 }
 
 .third-content{
-    overflow-y:scroll;
+    overflow-y:auto;
     height: 65vh;
 }
 
-.left, .right {
-    border-radius: 15px;
+.left{
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.right {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
 }
 
 .zoom {
@@ -213,6 +219,9 @@ ion-icon {
         min-height: 90vh;
         height: auto;
         margin-top: 10vh !important;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 0px;
+        
     }
 
     .content {
