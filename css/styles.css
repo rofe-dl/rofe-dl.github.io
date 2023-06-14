@@ -1,231 +1,235 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
 /* GLOBAL STUFF */
-body{
-    background-image: black;
-    background-size:cover;
-    color: white;
-    font-family: 'Inter', sans-serif;
+body {
+  background-image: black;
+  background-size: cover;
+  color: white;
+  font-family: "Inter", sans-serif;
 }
 
-hr{
-    background-color: white;
+hr {
+  background-color: white;
 }
 
-body > .container-fluid > .row{
-    height: 100vh;
+body > .container-fluid > .row {
+  height: 100vh;
 }
 
-a, a:hover{
-    color: inherit;
-    text-decoration: inherit;
+a,
+a:hover {
+  color: inherit;
+  text-decoration: inherit;
 }
 
-.first-content, .second-content {
-    overflow-y: auto;
-    height: 70vh;
+.first-content,
+.second-content {
+  overflow-y: auto;
+  height: 70vh;
 }
 
-.third-content{
-    overflow-y:auto;
-    height: 65vh;
+.third-content {
+  overflow-y: auto;
+  height: 65vh;
 }
 
-.left{
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
+.left {
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding-top: 12vh;
 }
 
 .right {
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 
 .zoom {
-    transition: 0.2s ease-in-out;
-    width: 100px;
+  transition: 0.2s ease-in-out;
+  width: 100px;
 }
 
 .zoom:hover {
-    transform-origin:center;
-    transform: scale(1.1);
-    color: grey;
+  transform-origin: center;
+  transform: scale(1.1);
+  color: grey;
 }
 /* ************ */
 
-.left, .right{
-    height: 90vh;
-    background-color: rgba(0, 0, 0, 0.7); /* transparent */
+.left,
+.right {
+  height: 90vh;
+  background-color: rgba(0, 0, 0, 0.7); /* transparent */
 }
 
 .content {
-    padding: 5vh;
-    font-size: 20px;
+  padding: 5vh;
+  font-size: 20px;
 }
 
-.content img{
-    width: 100%;
-    margin: 3vh;
+.content img {
+  width: 100%;
+  margin: 3vh;
 
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .left li {
-    padding: 2vh;
+  padding: 2vh;
 }
 
-.left ul{
-    list-style: none;
-    font-size:25px;
+.left ul {
+  list-style: none;
+  font-size: 25px;
 
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    /* for wrapping starting from middle*/
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  /* for wrapping starting from middle*/
+  justify-content: center;
 
-    text-align: center;
-    padding: 0px;
-    margin-top: 10vh;
+  text-align: center;
+  padding: 0px;
+  margin-top: 10vh;
 }
 
 .nav-heading {
-    text-align: center;
-    /* font-family: 'Press Start 2P', cursive; */
-    margin: 4vh;
-    font-size: 50px;
+  text-align: center;
+  /* font-family: 'Press Start 2P', cursive; */
+  margin: 4vh;
+  font-size: 50px;
 }
 
-.nav-btn > li{
-    transition: .2s ease-in-out;
+.nav-btn > li {
+  transition: 0.2s ease-in-out;
 }
 
-.nav-btn > li:hover{
-    transform-origin: center;
-    transform: scale(1.2);
+.nav-btn > li:hover {
+  transform-origin: center;
+  transform: scale(1.2);
 }
 
 /* ACTIVE nav buttons */
-.nav-btn.active{
-    background-color: white;
-    color: black;
-    border-radius: 10px;
-    transition: 0.2s ease-in-out;
+.nav-btn.active {
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  transition: 0.2s ease-in-out;
 }
 
 /* NEXT & Download button */
-.content .butn{
-    border-color: white;
-    border-style:solid;
-    padding: 1vh;
+.content .butn {
+  border-color: white;
+  border-style: solid;
+  padding: 1vh;
 
-    transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
-.content .butn:hover{
-    border-color: black;
-    color: black;
-    background-color: white;
+.content .butn:hover {
+  border-color: black;
+  color: black;
+  background-color: white;
 }
 
 /* Socials Icons */
 ion-icon {
-    font-size: 60px;
-    margin: 1vw;
+  font-size: 60px;
+  margin: 1vw;
 }
 
 .content img {
-    width: 100%;
-    margin: 3vh;
+  width: 100%;
+  margin: 3vh;
 
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.first-content{
-    margin-top: 10vh;
-    font-size: 30px;
+.first-content {
+  margin-top: 10vh;
+  font-size: 30px;
 }
 
-.first-content h1{
-    font-size: 128px;
+.first-content h1 {
+  font-size: 128px;
 }
 
 .second-content {
-    margin-top: 5vh;
+  margin-top: 5vh;
 }
 
 .second-content img {
-    width: 70%;
+  width: 70%;
 }
 
-.fifth-content li{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.fifth-content li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 /* MEDIUM SCREEN */
-@media only screen and (max-width: 1700px){
-    .nav-heading {
-        margin: 2vh;
-        font-size: 30px;
-    }
+@media only screen and (max-width: 1700px) {
+  .nav-heading {
+    margin: 2vh;
+    font-size: 30px;
+  }
 
-    .left ul{
-        font-size: 20px;
-    }
+  .left ul {
+    font-size: 20px;
+  }
 
-    .content{
-        font-size: 15px;
-    }
-    
-    .first-content h1{
-        font-size: 100px;
-    }
+  .content {
+    font-size: 15px;
+  }
 
-    .first-content {
-        font-size: 25px;
-        margin-top: 5vh;
-    }
+  .first-content h1 {
+    font-size: 100px;
+  }
+
+  .first-content {
+    font-size: 25px;
+    margin-top: 5vh;
+  }
 }
 
 /* PHONE SCREEN */
-@media only screen and (max-width: 768px){
-    .left{
-        height: auto;
-        max-height: 45vh;
-        margin-top: 0px !important;
-        border-radius: 0px;
-        border-bottom-left-radius: 15px;
-        border-bottom-right-radius: 15px;
-    }
+@media only screen and (max-width: 768px) {
+  .left {
+    height: auto;
+    max-height: 45vh;
+    margin-top: 0px !important;
+    border-radius: 0px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding-top: 0vh;
+  }
 
-    .left ul{
-        flex-direction: row;
-        font-size: 15px;
-        margin-top: 5vh;
-    }
+  .left ul {
+    flex-direction: row;
+    font-size: 15px;
+    margin-top: 5vh;
+  }
 
-    .nav-heading {
-        margin: 1vh;
-        font-size: 20x;
-    }
+  .nav-heading {
+    margin: 1vh;
+    font-size: 20x;
+  }
 
-    .right{
-        min-height: 90vh;
-        height: auto;
-        margin-top: 10vh !important;
-        border-top-right-radius: 15px;
-        border-bottom-left-radius: 0px;
-        
-    }
+  .right {
+    min-height: 90vh;
+    height: auto;
+    margin-top: 10vh !important;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 0px;
+  }
 
-    .content {
-        padding: 1vh;
-        padding-top: 4vh;
-    }  
+  .content {
+    padding: 1vh;
+    padding-top: 4vh;
+  }
 }
