@@ -23,22 +23,6 @@ function randomizeBg() {
 }
 
 function init_splides() {
-  var splide_2 = new Splide(".splide-2", {
-    type: "loop",
-  });
-
-  var splide_3 = new Splide(".splide-3", {
-    type: "loop",
-  });
-
-  var splide_4 = new Splide(".splide-4", {
-    type: "loop",
-  });
-
-  var splide_5 = new Splide(".splide-5", {
-    type: "loop",
-  });
-
   var splide_6 = new Splide(".splide-6", {
     type: "loop",
   });
@@ -47,10 +31,6 @@ function init_splides() {
     type: "loop",
   });
 
-  splide_2.mount();
-  splide_3.mount();
-  splide_4.mount();
-  splide_5.mount();
   splide_6.mount();
   splide_7.mount();
 }
